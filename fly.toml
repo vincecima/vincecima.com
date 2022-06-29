@@ -1,6 +1,4 @@
-# fly.toml file generated for red-sun-85 on 2022-05-30T22:23:37-05:00
-
-app = "red-sun-85"
+app = "vincecima-xyz-site"
 
 kill_signal = "SIGINT"
 kill_timeout = 5
