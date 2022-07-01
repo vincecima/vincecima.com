@@ -151,3 +151,16 @@ resource "gandi_livedns_record" "vincecima_xyz_aaaa" {
   values = [fly_ip.v6.address]
   zone   = gandi_domain.vincecima_xyz.name
 }
+
+resource "fly_cert" "vincecima_xyz" {
+  app      = fly_app.production.name
+  hostname = gandi_domain.vincecima_xyz.name
+}
+
+resource "gandi_livedns_record" "vincecima_xyz_cname" {
+  name   = "_acme-challenge"
+  ttl    = 10800
+  type   = "CNAME"
+  values = [fly_cert.vincecima_xyz.dnsvalidationtarget]
+  zone   = gandi_domain.vincecima_xyz.name
+}
