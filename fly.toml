@@ -6,6 +6,7 @@ processes = []
 
 [env]
   SERVER_LOG_LEVEL = "info"
+  SERVER_PORT = "8080"
 
 [experimental]
   allowed_public_ports = []
@@ -13,7 +14,7 @@ processes = []
 
 [[services]]
   http_checks = []
-  internal_port = 8043
+  internal_port = 8080
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
