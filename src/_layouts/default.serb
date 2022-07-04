@@ -4,12 +4,19 @@
     {%@ "head", metadata: site.metadata, title: resource.data.title %}
   </head>
   <body class="{{ resource.data.layout }} {{ resource.data.page_class }}">
-    {%@ Shared::Navbar metadata: site.metadata, resource: resource %}
-
     <main>
+      <nav>
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/posts' | relative_url }}">Posts</a></li>
+          <li><a href="{{ '/resume' | relative_url }}">Resume</a></li>
+          <li><a href="{{ '/now' | relative_url }}">Now</a></li>
+          <li><a href="https://gitlab.com/vincecima">GitLab</a></li>
+          <li><a href="https://github.com/vincecima">GitHub</a></li>
+          <li><a href="https://twitter.com/vincecima">Twitter</a></li>
+        </ul>
+      </nav>
       {%= yield %}
     </main>
-
-    {%@ "footer", metadata: site.metadata %}
   </body>
 </html>

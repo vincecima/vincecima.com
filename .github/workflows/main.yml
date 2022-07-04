@@ -1,9 +1,9 @@
 name: Fly Deploy
-on:
-  push:
-    branches:    
-      - 'main'
-  workflow_dispatch:
+on: push
+  # push:
+  #   branches:    
+  #     - 'main'
+  # workflow_dispatch:
 env:
   FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
 jobs:
@@ -19,6 +19,9 @@ jobs:
         with:
           node-version: 18.4.0
           cache: 'yarn'
-      - run: ./bin/bt build --environment=production
+      - run: yarn install
+      - run: ./bin/bt deploy
+        env:
+          BRIDGETOWN_ENV: production
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: flyctl deploy --remote-only
