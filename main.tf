@@ -4,7 +4,7 @@ terraform {
   required_providers {
     fly = {
       source  = "fly-apps/fly"
-      version = "0.0.9"
+      version = "0.0.10"
     }
 
     gandi = {
