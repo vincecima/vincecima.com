@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Your First Post on Bridgetown"
-date:   2022-05-29 19:42:29 -0500
-categories: updates
+title:  "Using Ansible to Setup a Steam Deck"
+date:   2022-08-15 10:00:00 -0500
+published: false
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `bridgetown serve`, which launches a web server and auto-regenerates your site when a file is updated.
