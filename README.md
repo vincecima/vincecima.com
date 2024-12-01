@@ -1,3 +1,16 @@
+## Setup
+
+```bash
+brew install bun just
+just install
+```
+
+## Usage
+
+```bash
+just build
+```
+
 ## Appendix
 
 - [Bun](https://bun.sh/)
