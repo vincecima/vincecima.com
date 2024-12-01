@@ -3,9 +3,6 @@ on: [ push, workflow_dispatch ]
 jobs:
   publish:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
     steps:
     - uses: actions/checkout@v3
     - uses: oven-sh/setup-bun@v2
