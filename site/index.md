@@ -10,4 +10,4 @@ Previously at [Vitally](https://www.vitally.io/), [Stripe](https://stripe.com/),
 
 #### Projects
 
-[@homebrew_new_pkgs@botsin.space](https://mastodon.social/@homebrew_new_pkgs) - Bot tooting new formula and casks added to the Homebrew package manage.
+[@homebrew_new_pkgs@mastodon.social](https://mastodon.social/@homebrew_new_pkgs) - Bot tooting new formula and casks added to the Homebrew package manage.
