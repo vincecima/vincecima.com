@@ -3,6 +3,7 @@
   "type": "module",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@types/bun": "latest",
     "simpledotcss": "^2.3.2"
   }
