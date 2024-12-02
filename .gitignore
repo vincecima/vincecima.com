@@ -2,4 +2,4 @@
 node_modules/
 
 # Eleventy output
-_site/
+public/
