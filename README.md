@@ -16,6 +16,7 @@ just build
 - [Bun](https://bun.sh/)
 - [Cloudflare Dashboard](https://dash.cloudflare.com/eae30e90d3179c4c3ba81a6b7d1151b0/pages/view/vincecima-com)
 - [Eleventy](https://www.11ty.dev/)
+- [GoatCounter](https://vincecima.goatcounter.com/)
 - [wrangler-action](https://github.com/cloudflare/wrangler-action)
 
 ## GitHub Actions Environment Setup
