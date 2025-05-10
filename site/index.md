@@ -2,7 +2,7 @@
 layout: base.njk
 ---
 
-Software engineer in Chicago.
+Software engineer in Chicago, working at [Tines](https://www.tines.com/).
 
 Previously at [Vitally](https://www.vitally.io/), [Stripe](https://stripe.com/), [Trunk Club](https://en.wikipedia.org/wiki/Trunk_Club) and [Incredible Technologies](https://www.itsgames.com/).
 
