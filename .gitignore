@@ -3,3 +3,4 @@ node_modules/
 
 # Eleventy output
 public/
+!site/public
