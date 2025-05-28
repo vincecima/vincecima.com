@@ -2,7 +2,7 @@ build:
     bun run eleventy
 
 clean:
-    rm -rf public/*
+    rm -rf output/*
 
 install:
     bun install

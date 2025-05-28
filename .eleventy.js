@@ -8,7 +8,7 @@ export default function (eleventyConfig) {
     eleventyConfig.setLayoutsDirectory("_layouts");
     eleventyConfig.setIncludesDirectory("_includes");
     eleventyConfig.addPassthroughCopy("./site/public/bundle.css");
-    eleventyConfig.setOutputDirectory("public");
+    eleventyConfig.setOutputDirectory("output");
     eleventyConfig.addBundle("css");
 
     eleventyConfig.addFilter('formatDate', (date, format) => dayjs(date).format(format));
