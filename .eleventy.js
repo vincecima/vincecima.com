@@ -7,7 +7,7 @@ export default function (eleventyConfig) {
     eleventyConfig.setInputDirectory("site");
     eleventyConfig.setLayoutsDirectory("_layouts");
     eleventyConfig.setIncludesDirectory("_includes");
-    eleventyConfig.addPassthroughCopy("./site/public");
+    eleventyConfig.addPassthroughCopy("./site/public/bundle.css");
     eleventyConfig.setOutputDirectory("public");
     eleventyConfig.addBundle("css");
 
