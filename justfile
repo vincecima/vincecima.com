@@ -1,8 +1,11 @@
 build:
     bun run eleventy
 
+clean:
+    rm -rf public/*
+
 install:
     bun install
 
 serve:
-    bun run eleventy --serve
+    DEBUG=Eleventy* bun run eleventy --serve

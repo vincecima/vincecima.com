@@ -1,10 +1,19 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import dayjs from "dayjs";
+
 
 export default function (eleventyConfig) {
     eleventyConfig.setInputDirectory("site");
-    eleventyConfig.setOutputDirectory("public")
+    eleventyConfig.setLayoutsDirectory("_layouts");
+    eleventyConfig.setIncludesDirectory("_includes");
+    eleventyConfig.addPassthroughCopy("./site/public");
+    eleventyConfig.setOutputDirectory("public");
     eleventyConfig.addBundle("css");
 
+    eleventyConfig.addFilter('formatDate', (date, format) => dayjs(date).format(format));
+
+    eleventyConfig.addPlugin(eleventyImageTransformPlugin);
     eleventyConfig.addPlugin(feedPlugin, {
         type: "json",
         outputPath: "feed.json",
