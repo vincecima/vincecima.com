@@ -30,6 +30,7 @@ export default function (eleventyConfig) {
         }
     });
     eleventyConfig.addPlugin(feedPlugin, {
+        type: "atom",
         collection: {
             name: "posts"
         },
