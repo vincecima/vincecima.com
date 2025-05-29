@@ -13,9 +13,7 @@ export default function (eleventyConfig) {
 
     eleventyConfig.addFilter('formatDate', (date, format) => dayjs(date).format(format));
 
-    eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-        formats: ["webp", "jpeg", "svg"]
-    });
+    eleventyConfig.addPlugin(eleventyImageTransformPlugin);
     eleventyConfig.addPlugin(feedPlugin, {
         type: "json",
         outputPath: "feed.json",
