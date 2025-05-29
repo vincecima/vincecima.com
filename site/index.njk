@@ -19,7 +19,7 @@ layout: base.njk
 <h2>Writing</h2>
 <div style="display: grid; grid-template-columns: 100px 1fr;">
   {% for link in collections.links %}
-  <section>{{ link.date | formatDate('YYYY • MM') }}</section>
+  <section><a id="{{ link.fileSlug }}" href="#{{ link.fileSlug }}">{{ link.date | formatDate('YYYY • MM') }}</a></section>
   <section>
     <a href="{{ link.data.linkOf }}">{{ link.data.title }}</a>{%- if link.data.via -%}&nbsp;(<a href="{{ link.data.via }}">via</a>){%- endif -%}
     {{ link.content | safe }}
