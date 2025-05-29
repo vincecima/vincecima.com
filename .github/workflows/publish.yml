@@ -19,4 +19,4 @@ jobs:
       with:
         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        command: pages deploy public --commit-dirty=true --project-name=vincecima-com
+        command: pages deploy output --commit-dirty=true --project-name=vincecima-com

@@ -1,0 +1,10 @@
+:root, :host {
+    /* https://github.com/system-fonts/modern-font-stacks?tab=readme-ov-file#system-ui */
+  --pico-font-family-sans-serif: system-ui, sans-serif;
+}
+
+/* https://github.com/system-fonts/modern-font-stacks?tab=readme-ov-file#anti-aliasing */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

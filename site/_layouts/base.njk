@@ -1,4 +1,7 @@
-{% css %}{% include "node_modules/simpledotcss/simple.min.css" %}{% endcss %}
+{% css %}
+{% include "node_modules/@picocss/pico/css/pico.min.css" %}
+{% include "site/public/bundle.css" %}
+{% endcss %}
 
 <!doctype html>
 <html lang="en">
@@ -10,6 +13,8 @@
     <script data-goatcounter="https://vincecima.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
   </head>
   <body>
-    {{ content | safe }}
+    <main class="container">
+      {{ content | safe }}
+    </main>
   </body>
 </html>

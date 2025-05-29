@@ -1,10 +1,21 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import dayjs from "dayjs";
+
 
 export default function (eleventyConfig) {
     eleventyConfig.setInputDirectory("site");
-    eleventyConfig.setOutputDirectory("public")
+    eleventyConfig.setLayoutsDirectory("_layouts");
+    eleventyConfig.setIncludesDirectory("_includes");
+    eleventyConfig.addPassthroughCopy("./site/public/bundle.css");
+    eleventyConfig.setOutputDirectory("output");
     eleventyConfig.addBundle("css");
 
+    eleventyConfig.addFilter('formatDate', (date, format) => dayjs(date).format(format));
+
+    eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+        formats: ["webp", "jpeg", "svg"]
+    });
     eleventyConfig.addPlugin(feedPlugin, {
         type: "json",
         outputPath: "feed.json",
@@ -21,6 +32,7 @@ export default function (eleventyConfig) {
         }
     });
     eleventyConfig.addPlugin(feedPlugin, {
+        type: "atom",
         collection: {
             name: "posts"
         },
