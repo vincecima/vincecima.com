@@ -8,3 +8,13 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+#projects-container {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+
+#writing-container {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
