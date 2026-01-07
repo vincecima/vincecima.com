@@ -8,5 +8,14 @@
     "@types/bun": "^1.2.14",
     "dayjs": "^1.11.13"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@types/color": "^4.2.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "color": "^5.0.2",
+    "react-dom": "^19.2.0",
+    "react-syntax-highlighter": "15.6.6"
+  }
 }
