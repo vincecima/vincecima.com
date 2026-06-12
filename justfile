@@ -1,3 +1,6 @@
+project:
+    zed --new .
+
 build:
     bun run eleventy
 
