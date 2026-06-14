@@ -1,0 +1,8 @@
+name = "vincecima-com"
+compatibility_date = "2026-06-13"
+preview_urls = true
+workers_dev = true
+
+[assets]
+directory = "./output/"
+not_found_handling = "404-page"

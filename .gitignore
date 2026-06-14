@@ -3,3 +3,6 @@
 
 # Eleventy output
 /output/
+
+# Wrangler working files
+/.wrangler

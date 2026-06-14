@@ -2,21 +2,21 @@ on:
   push:
     branches:
       - main
-      - 'releases/**'
+      - "releases/**"
   workflow_dispatch:
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: oven-sh/setup-bun@v2
-      with:
-        bun-version-file: ".bun-version"
-    - run: bun install
-    - run: bun run eleventy
-    - uses: cloudflare/wrangler-action@v3
-      with:
-        accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        command: pages deploy output --commit-dirty=true --project-name=vincecima-com
+      - uses: actions/checkout@v6
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: ".bun-version"
+      - run: bun install
+      - run: bun run eleventy
+      - uses: cloudflare/wrangler-action@v4
+        with:
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: deploy
